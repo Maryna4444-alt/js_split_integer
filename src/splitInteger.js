@@ -1,11 +1,3 @@
-'use strict';
-
-/**
- * @param {number} value
- * @param {number} numberOfParts
- *
- * @returns {number[]}
- */
 function splitInteger(value, numberOfParts) {
   const parts = [];
   let rest = value;
@@ -17,7 +9,7 @@ function splitInteger(value, numberOfParts) {
     rest -= part;
   }
 
-  return parts.sort((a, b) => a - b); // сортировка по возрастанию
+  return parts;
 }
 
 module.exports = splitInteger;
